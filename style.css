@@ -1,0 +1,587 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+header {
+    text-align: center;
+}
+
+/* Logo interstellar */
+
+#interstellartitle {
+    animation-duration: 12s;
+    animation-delay: 0.0s;
+    animation-name: interstellartitle;
+    visibility: hidden;
+}
+
+@keyframes interstellartitle {
+  from {
+    visibility: visible;
+  }
+}
+
+/* Body */
+
+body#index {
+    background-color: black;
+    animation-duration: 15s;
+    animation-delay: 0s;
+    animation-name: body;
+    text-align: center;
+}
+
+@keyframes body {
+    from {
+        background-color: #05001E;
+    }
+    to {
+        background-color: black;
+    }
+}
+
+/* Etoiles */
+
+.etoiles {
+    animation-name: etoiles;
+    position: fixed;
+    transition-timing-function: ease-out;
+    width: 15px;
+    visibility: hidden;
+}
+
+#etoile1 {
+    animation-duration: 2s;
+    left: -5%;
+    top: -50%;;
+    animation-delay: 0s;
+}
+
+#etoile2 {
+    animation-duration: 2.8s;
+    left: 10%;
+    top: -50%;;
+    animation-delay: 0.8s;
+}
+
+#etoile3 {
+    animation-duration: 3.5s;
+    left: 35%;
+    top: -50%;;
+    animation-delay: 1.5s;
+}
+
+#etoile4 {
+    animation-duration: 4.2s;
+    left: 90%;
+    top: -50%;;
+    animation-delay: 2.2s;
+}
+
+#etoile5 {
+    animation-duration: 4.7s;
+    left: -15%;
+    top: 100%;;
+    animation-delay: 2.7s;
+}
+
+#etoile6 {
+    animation-duration: 5.1s;
+    left: 25%;
+    top: 100%;;
+    animation-delay: 3.1s;
+}
+
+#etoile7 {
+    animation-duration: 5.5s;
+    left: 72%;
+    top: 100%;
+    animation-delay: 3.5s;
+}
+
+#etoile8 {
+    animation-duration: 5.8s;
+    left: 72%;
+    top: 100%;
+    animation-delay: 3.8s;
+}
+
+#etoile9 {
+    animation-duration: 6.0s;
+    left: 72%;
+    top: 100%;
+    animation-delay: 4.0s;
+}
+
+#etoile10 {
+    animation-duration: 6.3s;
+    left: 72%;
+    top: 100%;
+    animation-delay: 4.3s;
+}
+
+#etoile11 {
+    animation-duration: 6.5s;
+    left: -15%;
+    top: 50%;
+    animation-delay: 4.5s;
+}
+
+#etoile12 {
+    animation-duration: 7.0s;
+    left: -6%;
+    top: 75%;
+    animation-delay: 5.0s;
+}
+
+#etoile13 {
+    animation-duration: 7.2s;
+    left: -6%;
+    top: 30%;
+    animation-delay: 5.2s;
+}
+
+#etoile14 {
+    animation-duration: 7.4s;
+    left: 100%;
+    top: 30%;
+    animation-delay: 5.4s;
+}
+
+#etoile15 {
+    animation-duration: 5.4s;
+    left: 100%;
+    top: 55%;
+    animation-delay: 3.4s;
+}
+
+#etoile16 {
+    animation-duration: 5.1s;
+    left: 28%;
+    top: 100%;
+    animation-delay: 3.1s;
+}
+
+#etoile17 {
+    animation-duration: 2.5s;
+    left: 100%;
+    top: 100%;
+    animation-delay: 0.5s;
+}
+
+#etoile18 {
+    animation-duration: 2.3s;
+    left: 75%;
+    top: -7%;
+    animation-delay: 0.3s;
+}
+
+#etoile19 {
+    animation-duration: 2.1s;
+    left: 30%;
+    top: -6%;
+    animation-delay: 0.1s;
+}
+
+#etoile20 {
+    animation-duration: 2.4s;
+    left: 64%;
+    top: 100%;
+    animation-delay: 0.4s;
+}
+
+@keyframes etoiles {
+  from {
+    width: 0px;
+    top:50%;
+    left:50%;
+    display: block;
+    visibility: visible;
+  }
+
+  to {
+    width: 30px;
+    display: none;
+  }
+}
+
+
+
+/* Affiche interstellar */
+
+#interstellarAffiche {
+    animation-duration: 8s;
+    position: fixed;
+    width: 100%;
+    height: 85%;
+    animation-name: interstellarAffiche;
+    visibility: visible;
+    top: 0;
+    left: 0;
+
+}
+
+@keyframes interstellarAffiche {
+  from {
+    visibility: hidden;
+  }
+
+  to {
+    visibility: hidden;
+  }
+}
+
+/* Menu */
+
+nav {
+    background-color: black;
+    animation-duration: 8s;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 0 auto 0 auto;
+    height: 15%;
+    visibility: visible;
+    animation-name: nav;
+}
+nav>ul {
+    padding-top: 40px;
+}
+
+nav>ul>li {
+    display: inline;
+    list-style-type: none;
+    margin: 0 30px 0 30px;
+}
+
+nav>ul>li>a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+@keyframes nav {
+  from {
+    visibility: hidden;
+  }
+
+  to {
+    visibility: hidden;
+  }
+}
+
+
+/* Trou noir */
+
+#trounoir {
+    animation-duration: 8s;
+    animation-delay: 0.0s;
+    animation-timing-function: ease-in;
+    animation-name: trounoir;
+    position: fixed;
+    transition-timing-function: linear;
+    top:-125%;
+    left:-55%;
+    visibility: hidden;
+}
+
+@keyframes trounoir {
+  from {
+    width: 0;
+    top:40%;
+    left:35%;
+    visibility: visible;
+  }
+
+  to {
+    width: 220%;
+    top:-125%;
+    left:-55%;
+    -ms-transform: rotate(360deg); /* IE 9 */
+    -webkit-transform: rotate(360deg); /* Chrome, Safari, Opera */
+    transform: rotate(360deg);
+  }
+}
+
+/* Trou noir 2 */
+
+#trounoir2 {
+    animation-duration: 8s;
+    animation-delay: 0.0s;
+    animation-timing-function: ease-in;
+    animation-name: trounoir2;
+    position: fixed;
+    transition-timing-function: linear;
+    top:-125%;
+    left:-55%;
+    visibility: hidden;
+}
+
+@keyframes trounoir2 {
+  from {
+    width: 0;
+    top:40%;
+    left:35%;
+    visibility: visible;
+  }
+
+  to {
+    width: 220%;
+    top:-125%;
+    left:-55%;
+    -ms-transform: rotate(-360deg); /* IE 9 */
+    -webkit-transform: rotate(-360deg); /* Chrome, Safari, Opera */
+    transform: rotate(-360deg);
+  }
+}
+
+/* Astronaute */
+
+
+#astronaute {
+    animation-duration: 8s;
+    animation-timing-function: linear;
+    animation-name: astronaute;
+    position: fixed;
+    width: 0;
+    visibility: hidden;
+}
+
+@keyframes astronaute {
+  from {
+    width: 30%;
+    top:75%;
+    left:75%;
+    visibility: visible;
+  }
+
+  to {
+    width: 0;
+    top: 50%;
+    left: 50%;
+    -ms-transform: rotate(-360deg); /* IE 9 */
+    -webkit-transform: rotate(-360deg); /* Chrome, Safari, Opera */
+    transform: rotate(-360deg);
+  }
+}
+
+
+
+/* Synopsis */
+
+body#synopsis{
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-size: 18px;
+}
+
+.animated {
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+/* Bounce Up */
+
+.bounceUp {
+  -webkit-animation-name: bounceUp;
+  animation-name: bounceUp;
+  animation-delay: 1s;
+  animation-duration: 2s;
+}
+
+@keyframes bounceUp {
+  from, 60%, 75%, 90%, to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -500px, 0);
+    transform: translate3d(0, -500px, 0);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 25px, 0);
+    transform: translate3d(0, 25px, 0);
+  }
+
+  75% {
+    -webkit-transform: translate3d(0, -10px, 0);
+    transform: translate3d(0, -10px, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(0, 5px, 0);
+    transform: translate3d(0, 5px, 0);
+  }
+
+  to {
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+/* Bounce Right */
+
+.bounceRight {
+  -webkit-animation-name: bounceRight;
+  animation-name: bounceRight;
+  animation-delay: 2s;
+  animation-duration: 2s;
+}
+
+@keyframes bounceRight {
+  from, 60%, 75%, 90%, to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-500px, 0, 0);
+    transform: translate3d(-500px, 0, 0);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(25px, 0, 0);
+    transform: translate3d(25px, 0, 0);
+  }
+
+  75% {
+    -webkit-transform: translate3d(-10px, 0, 0);
+    transform: translate3d(-10px, 0, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(5px, 0, 0);
+    transform: translate3d(5px, 0, 0);
+  }
+
+  to {
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+/* Bounce down */
+
+.bounceDown {
+  -webkit-animation-name: bounceDown;
+  animation-name: bounceDown;
+  animation-delay: 3s;
+  animation-duration: 2s;
+}
+
+@keyframes bounceDown {
+  from, 60%, 75%, 90%, to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 500px, 0);
+    transform: translate3d(0, 500px, 0);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, -20px, 0);
+    transform: translate3d(0, -20px, 0);
+  }
+
+  75% {
+    -webkit-transform: translate3d(0, 10px, 0);
+    transform: translate3d(0, 10px, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(0, -5px, 0);
+    transform: translate3d(0, -5px, 0);
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+/* Bounce left */
+
+.bounceLeft {
+  -webkit-animation-name: bounceLeft;
+  animation-name: bounceLeft;
+  animation-delay: 4s;
+  animation-duration: 2s;
+}
+
+@keyframes bounceLeft {
+  from, 60%, 75%, 90%, to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(500px, 0, 0);
+    transform: translate3d(500px, 0, 0);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(-25px, 0, 0);
+    transform: translate3d(-25px, 0, 0);
+  }
+
+  75% {
+    -webkit-transform: translate3d(10px, 0, 0);
+    transform: translate3d(10px, 0, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(-5px, 0, 0);
+    transform: translate3d(-5px, 0, 0);
+  }
+
+  to {
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+/* Trailer */
+
+#trailer {
+    animation-duration: 5s;
+    animation-delay: 3s;
+    animation-timing-function: linear;
+    animation-name: trailer;
+}
+
+@keyframes trailer {
+  from {
+    width: 0;
+    height: 0;
+  }
+
+  to {
+    width: 560px;
+    height: 315px;
+  }
+}
+
+/* Collaborateur */
+
+body#collaborateur{
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-size: 25px;
+}
