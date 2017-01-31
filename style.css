@@ -8,7 +8,7 @@ header {
     text-align: center;
 }
 
-/* Logo interstellar */
+/* Titre interstellar */
 
 #interstellartitle {
     animation-duration: 12s;
@@ -23,7 +23,7 @@ header {
   }
 }
 
-/* Body */
+/* Body index */
 
 body#index {
     background-color: black;
@@ -246,6 +246,7 @@ nav {
     margin: 0 auto 0 auto;
     height: 15%;
     visibility: visible;
+    padding-left: 250px;
 }
 
 #index > nav, #synopsis > nav {
@@ -263,13 +264,17 @@ nav>ul {
 nav>ul>li {
     display: inline;
     list-style-type: none;
-    margin: 0 30px 0 30px;
+    margin: 0 60px 0 60px;
 }
 
 nav>ul>li>a {
     color: white;
     text-decoration: none;
     font-size: 20px;
+}
+
+nav>ul>li>a:hover {
+    text-decoration: overline;
 }
 
 @keyframes nav {
@@ -351,7 +356,7 @@ nav>ul>li>a {
 
 
 #astronaute {
-    animation-duration: 8s;
+    animation-duration: 4s;
     animation-timing-function: linear;
     animation-name: astronaute;
     position: fixed;
@@ -368,6 +373,41 @@ nav>ul>li>a {
   }
 
   to {
+    width: 15%;
+    top: 62%;
+    left: 62%;
+    -ms-transform: rotate(-180deg); /* IE 9 */
+    -webkit-transform: rotate(-180deg); /* Chrome, Safari, Opera */
+    transform: rotate(-180deg);
+  }
+}
+
+
+/* Astronaute */
+
+
+#astronaute2 {
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-delay: 4s;
+    animation-name: astronaute2;
+    position: fixed;
+    width: 0;
+    visibility: hidden;
+}
+
+@keyframes astronaute2 {
+  from {
+    width: 15%;
+    top:62%;
+    left:62%;
+    visibility: visible;
+    -ms-transform: rotate(-180deg); /* IE 9 */
+    -webkit-transform: rotate(-180deg); /* Chrome, Safari, Opera */
+    transform: rotate(-180deg);
+  }
+
+  to {
     width: 0;
     top: 50%;
     left: 50%;
@@ -376,7 +416,6 @@ nav>ul>li>a {
     transform: rotate(-360deg);
   }
 }
-
 
 
 /* Synopsis */
@@ -393,11 +432,20 @@ body#synopsis{
 }
 
 #synop {
-    text-align: left;
-    font-family: Arial;
+    width: 100%;
+    text-align: justify;
     position: absolute;
-    top: 50%;
-    padding-left: 25px;
+    top: 52%;
+    padding-left: 100px;
+}
+
+#syn {
+    display: inline-block;
+    text-align: justify;
+    font-family: Arial;
+    width: 45%;
+    position: absolute;
+    right: 13%;
 }
 
 .animated {
@@ -580,10 +628,13 @@ body#synopsis{
 /* Trailer */
 
 #trailer {
+    display: inline-block;
     animation-duration: 5s;
     animation-delay: 3s;
     animation-timing-function: linear;
     animation-name: trailer;
+    position: absolute;
+    top: 40%;
 }
 
 @keyframes trailer {
@@ -650,7 +701,7 @@ body#collaborateur{
 .nom {
     font-family: Impact;
     position: absolute;
-    display: none;
+    visibility: hidden;
     left: -15px;
 }
 
@@ -661,7 +712,7 @@ body#collaborateur{
 }
 
 #divAnto:hover #anto {
-    display: block;
+    visibility: visible;
 }
 
 @keyframes anto {
@@ -697,6 +748,33 @@ body#collaborateur{
     }
 }
 
+#anto {
+    animation-name: textAnto;
+    animation-duration: 50s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes textAnto {
+    15% {
+        transform: rotate(-150deg);
+    }
+    30% {
+        transform: rotate(-180deg);
+    }
+    45% {
+        transform: rotate(-70deg);
+    }
+    60% {
+        transform: rotate(-230deg);
+    }
+    75% {
+        transform: rotate(-320deg);
+    }
+    90% {
+        transform: rotate(-350deg);
+    }
+}
+
 #divGio {
     left: 25%;
     top: 68%;
@@ -704,7 +782,7 @@ body#collaborateur{
 }
 
 #divGio:hover #gio {
-    display: block;
+    visibility: visible;
 }
 
 @keyframes gio {
@@ -740,6 +818,35 @@ body#collaborateur{
     }
 }
 
+#gio {
+    animation-name: textGio;
+    animation-duration: 50s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes textGio {
+    15% {
+        transform: rotate(-150deg);
+    }
+    30% {
+        transform: rotate(-180deg);
+    }
+    45% {
+        transform: rotate(-70deg);
+    }
+    60% {
+        transform: rotate(-230deg);
+    }
+    75% {
+        transform: rotate(-320deg);
+    }
+    90% {
+        transform: rotate(-350deg);
+    }
+}
+
+
+
 #divEmeline {
     left: 72%;
     top: 21%;
@@ -747,7 +854,7 @@ body#collaborateur{
 }
 
 #divEmeline:hover #emeline {
-    display: block;
+    visibility: visible;
 }
 
 @keyframes emeline {
@@ -780,5 +887,32 @@ body#collaborateur{
         left: 59%;
         top: 50%;
         transform: rotate(350deg);
+    }
+}
+
+#emeline {
+    animation-name: textEmeline;
+    animation-duration: 50s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes textEmeline {
+    15% {
+        transform: rotate(-150deg);
+    }
+    30% {
+        transform: rotate(-180deg);
+    }
+    45% {
+        transform: rotate(-70deg);
+    }
+    60% {
+        transform: rotate(-230deg);
+    }
+    75% {
+        transform: rotate(-320deg);
+    }
+    90% {
+        transform: rotate(-350deg);
     }
 }
