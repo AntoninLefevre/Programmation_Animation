@@ -427,7 +427,6 @@ body#synopsis{
     font-size: 18px;
     background-size: 100%;
     background-image: url('staronthesky.png');
-    background-repeat: no-repeat;
     color: white;
 }
 
@@ -440,12 +439,17 @@ body#synopsis{
 }
 
 #syn {
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
     text-align: justify;
     font-family: Arial;
     width: 45%;
     position: absolute;
     right: 13%;
+}
+
+#syn > p {
+
 }
 
 .animated {
@@ -628,7 +632,7 @@ body#synopsis{
 /* Trailer */
 
 #trailer {
-    display: inline-block;
+    display: flex;
     animation-duration: 5s;
     animation-delay: 3s;
     animation-timing-function: linear;
@@ -655,7 +659,6 @@ body#collaborateur{
     text-align: center;
     background-size: 100%;
     background-image: url('staronthesky.png');
-    background-repeat: no-repeat;
     color: white;
     font-size: 25px;
 }
@@ -668,7 +671,7 @@ body#collaborateur{
     left: 0;
     width: 25%;
     position: fixed;
-    bottom: -25%;
+    bottom: 0%;
     transition: 10s;
     animation-name: earth;
     animation-duration: 150s;
@@ -914,5 +917,29 @@ body#collaborateur{
     }
     90% {
         transform: rotate(-350deg);
+    }
+}
+
+#image {
+    margin-top: 25px;
+}
+
+@media screen and (max-width: 800px) {
+    #synop {
+        left: 0;
+        width: 90%;
+    }
+  #trailer, #syn {
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: relative;
+    width: 90%;
+    margin-bottom: 80px;
+  }
+
+    nav {
+        padding-left: 0px;
+        position: fixed;
+        bottom: 0;
     }
 }
